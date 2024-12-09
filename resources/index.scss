@@ -1,0 +1,47 @@
+$main-color:azure;
+$main-border:1px solid gainsboro;
+$main-shadow:5px 5px 5px gainsboro;
+
+.outer{
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner{
+    width: 250px;
+    height: 300px;
+    border: $main-border;
+    box-shadow: $main-shadow;
+    border-radius: 5px;
+
+}
+.top, .bottom{
+    padding: 5px;
+}
+
+.inputEl{
+    width: 90%;
+    height: 35px;
+    text-align: right;
+    padding: 0 12px;
+    font-weight: 600;
+
+    & :focus{
+        outline: none;
+    }
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom > button{
+    width: 35px;
+    height: 35px;
+}
